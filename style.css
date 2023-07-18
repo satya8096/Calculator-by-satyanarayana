@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #595959 ;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #595959 ;
+    letter-spacing: 1px;
+}
+.container h2{
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.calculator{
+    padding: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.calculator input{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.97s;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.calculator input:hover{
+    background-color: #258;
+}
+.displayinput{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+.displayinput input{
+    width: 312px;
+    background-color: #258
+}
+.lastrow .equal{
+    width: 142px;
+}
+
+
+
+@media (max-width:400px) {
+    .container h2{
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        margin: 20px;
+    }
+    .calculator{
+        width: 93%;
+        height: 62%;
+    }
+    .calculator input{
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .lastrow .equal{
+        width: 115px;
+    }
+    .displayinput input{
+        width: 100%;
+        background-color: #258
+    }
+}
